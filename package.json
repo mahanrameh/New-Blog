@@ -1,10 +1,13 @@
 {
-  "name": "saeeidi-rad-blog",
+  "name": "new-blog",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {},
+  "main": "server.js",
+  "scripts": {
+    "db": "dotenv -e .env -- sequelize-cli db:create --config ./sequelizeConfigs.js",
+    "migrate": "dotenv -e .env -- sequelize-cli db:migrate --config ./sequelizeConfigs.js"
+  },
   "keywords": [],
-  "author": "",
+  "author": "mahan",
   "license": "ISC",
   "description": "",
   "volta": {
